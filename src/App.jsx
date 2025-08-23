@@ -78,13 +78,16 @@ function App() {
         <div className='flex items-center absolute top-[185px] left-[130px] gap-x-1'>
           <input id="rangeInput" type='range' min="7" max="40" value={length} onChange={(e)=>{
             setlength(e.target.value)
+            setbg("#3579e6")
           }}/>
           <label htmlFor="rangeInput" className='text-orange-500 text-[18px] mr-13'>Length: {length}</label>
           <input type='checkbox' onChange={()=>{
             setnumbersallowed((prev)=>!prev)
+            setbg("#3579e6")
           }}/> <p className='text-orange-500 mr-13'>Numbers </p>
           <input type='checkbox' onChange={()=>{
             setcharactersallowed((prev)=>!prev)
+            setbg("#3579e6")
           }}/><p className='text-orange-500'>Characters </p>
         </div>
       </div>
