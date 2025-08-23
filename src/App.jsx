@@ -38,9 +38,7 @@ function App() {
 
   useEffect(()=>{
     passgenerator()
-  },[numbers,Characters,length,setpassword,bg])
-
-  const copyref=useRef(null)
+  },[numbers,Characters,length,setpassword])
 
   const resetcopy=()=>{
     setbg("#3579e6")
@@ -74,8 +72,7 @@ function App() {
             onClick={()=>{
               setbg("red")
               copytoclipboard()
-            }}
-            ref={copyref}>
+            }}>
           Copy</div>
         </div>
         <div className='flex items-center absolute top-[185px] left-[130px] gap-x-1'>
